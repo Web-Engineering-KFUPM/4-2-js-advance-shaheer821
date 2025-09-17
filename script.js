@@ -120,6 +120,23 @@ Task:
 3) Handle the error using try { ... } catch (e) { ... } finally { ... } and log messages
    in each block so you can see the flow of control.
 */
+function getMax(arr) {
+   if (!Array.isArray(arr) || arr.length === 0) {
+      throw new Error("Array must not be empty");
+   }
+   return Math.max(...arr);
+}
+
+try {
+   console.log("Trying to get max from empty array");
+   const result = getMax([]);
+   console.log("Max value:", result);
+} catch (e) {
+   console.log("Caught error:", e.message);
+} finally {
+   console.log("Finally block executed");
+}
+
 
 // ===================================================================================
 // TODO-7: REGEX + forEach — find words containing 'ab' and log matches from the list
