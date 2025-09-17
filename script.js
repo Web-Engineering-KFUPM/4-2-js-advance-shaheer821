@@ -53,6 +53,16 @@ Task:
 1) Make an object used as a "map" (key → value), e.g., course codes → titles.
 2) Iterate over it with for...in and display each key and value.
 */
+const courseMap = {
+   CS104: "Computer Science",
+   MATH201: "Calculus II",
+};
+
+console.log("Courses:");
+for (const code in courseMap) {
+   console.log(`${code}: ${courseMap[code]}`);
+}
+
 
 // =========================================
 // TODO-3: STRING OBJECT — charAt() & length
@@ -62,6 +72,7 @@ Task:
 1) Create a String object or plain string.
 2) Use .charAt(index) and .length to output characters and size.
 */
+
 
 // ===================================
 // TODO-4: DATE — day, month, and year
