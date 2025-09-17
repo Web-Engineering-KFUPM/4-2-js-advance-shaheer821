@@ -72,6 +72,11 @@ Task:
 1) Create a String object or plain string.
 2) Use .charAt(index) and .length to output characters and size.
 */
+const myString = "JavaScript";
+console.log("String:", myString);
+console.log("Computer:", myString.charAt(0));
+console.log("Science:", myString.charAt(4));
+console.log("Week 4:", myString.length);
 
 
 // ===================================
